@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/',(req,res)=>{
     return res.render('about.hbs', {
-        pageTitle: 'Welcome to the World of Bharath Thatikonda',
+        pageTitle: 'Welcome to the World of Bharath Raj Thatikonda',
         subTitle: 'Bharath Thatikonda an Foolish Fellow',
         currentYear: new Date().getFullYear()
       });});
@@ -22,7 +22,7 @@ app.get('/hello',(req,res)=>{
  app.get('/about',(req,res)=>{
     return res.render('about.hbs', {
         pageTitle: 'About Page',
-        subTitle: 'Bharath Thatikonda',
+        subTitle: 'Bharath Raj Thatikonda',
         currentYear: new Date().getFullYear()
       });
  });
