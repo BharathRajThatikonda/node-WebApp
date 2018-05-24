@@ -8,13 +8,16 @@ app.set("view engine","hbs");
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/',(req,res)=>{
+app.get('/profile',(req,res)=>{
     return res.render('about.hbs', {
         pageTitle: 'Welcome to the World of Bharath Raj Thatikonda',
         subTitle: 'Bharath Thatikonda an Foolish Fellow',
         currentYear: new Date().getFullYear()
       });});
 
+      app.get('/',(req,res)=>{
+        return res.render('profile.hbs', {
+          });});
 app.get('/hello',(req,res)=>{
     return res.send("gfge")
  });
